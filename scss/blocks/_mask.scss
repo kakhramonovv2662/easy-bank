@@ -1,0 +1,389 @@
+.mask {
+    width: 100%;
+    height: 550px;
+    background: #1B262F;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__contant {
+        padding-top: 100px;
+        max-width: 445px;
+    }
+
+    &__title {
+        font-family: 'DM Serif Display';
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.369231px;
+        color: #FBFCFE;
+        padding-bottom: 0;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 28px;
+        color: #FBFCFE;
+        mix-blend-mode: normal;
+        opacity: 0.7;
+        padding-bottom: 15px;
+    }
+
+    &__link {
+        max-width: 130px;
+        width: 100%;
+        text-decoration: none;
+        border: 1px solid #FBFCFE;
+        box-sizing: border-box;
+        border-radius: 24px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+        color: #FBFCFE;
+        padding: 10px 20px;
+
+        &:active {
+            background-color: #fff;
+            color: #222;
+        }
+    }
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 185px;
+    
+    &__item {
+        padding-left: 60px;
+        padding-bottom: 54px;
+
+        &:nth-child(4) {
+            padding-right: 30px;
+        }
+
+        &:nth-child(5) {
+            padding-right: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .mask {
+        height: 700px;
+
+        &__container {
+            display: inline-block;
+        }
+    
+        &__contant {
+            padding-top: 100px;
+            max-width: 445px;
+        }
+    
+        &__title {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            top: 80px;
+            left: 150px;
+            font-family: 'DM Serif Display';
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.369231px;
+            color: #FBFCFE;
+            padding-bottom: 0;
+            padding-top: 50px;
+            padding-left: 30px;
+            // display: none;
+        }
+    
+        &__text {
+            position: relative;
+            z-index: 1;
+            left: 120px;
+            top: 60px;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            color: #FBFCFE;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            padding-bottom: 15px;
+            text-align: center;
+            padding-left: 50px;
+        }
+    
+        &__link {
+            position: relative;
+            z-index: 1;
+            left: 290px;
+            top: 60px;
+            max-width: 130px;
+            width: 100%;
+            text-decoration: none;
+            border: 1px solid #FBFCFE;
+            box-sizing: border-box;
+            border-radius: 24px;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            letter-spacing: -0.115385px;
+            color: #FBFCFE;
+            padding: 10px 20px;
+            margin-left: 20px;
+            // display: none;
+    
+            &:active {
+                background-color: #fff;
+                color: #222;
+            }
+        }
+    }
+    
+    .list {
+        position: relative;
+        z-index: 1;
+        left: -40px;
+        top: -560px;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        &__item {
+    
+            &:nth-child(4) {
+                padding-right: 30px;
+            }
+    
+            &:nth-child(5) {
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .mask {
+        &__contant {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            top: 70px;
+            right: 160px;
+        }
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.246154px;
+        }
+
+        &__text {
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+            color: #FBFCFE;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            padding-left: 80px;
+        }
+
+        &__link {
+            margin-left: 0;
+            margin-right: 250px;
+        }
+    }
+
+    .list {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        top: 970px;
+        left: -30px;
+        display: flex;
+
+        &__item {
+            &:nth-child(2) {
+                flex-wrap: nowrap;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .mask {
+        &__contant {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            top: 70px;
+            left: -150px;
+            right: 120px;
+        }
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.246154px;
+        }
+
+        &__text {
+            margin: 0;
+            padding: 0;
+            max-width: 400px;
+            position: absolute;
+            z-index: 1;
+            top: 300px;
+            left: 170px;
+            width: 100%;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 28px;
+            text-align: center;
+            color: #FBFCFE;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+        }
+
+        &__link {
+            max-width: 130px;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+            position: relative;
+            z-index: 1;
+            top: 250px;
+            left: 260px;
+        }
+    }
+
+    .list {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        top: 970px;
+        left: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__item {
+            margin: 0;
+            padding: 0;
+            padding-left: 35px;
+            padding-bottom: 50px;
+            &:nth-child(2) {
+                flex-wrap: nowrap;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .mask {
+        height: 670px;
+        &__contant {
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            top: 70px;
+            left: -150px;
+            right: 120px;
+        }
+
+        &__title {
+            font-family: 'DM Serif Display';
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: -0.246154px;
+            left: 140px;
+            width: 100%;
+            top: -20px;
+        }
+
+        &__text {
+            margin: 0;
+            padding: 0;
+            max-width: 400px;
+            position: absolute;
+            z-index: 1;
+            top: 200px;
+            left: 150px;
+            width: 100%;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 28px;
+            text-align: center;
+            color: #FBFCFE;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+        }
+
+        &__link {
+            max-width: 130px;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+            position: relative;
+            z-index: 1;
+            top: 170px;
+            left: 230px;
+        }
+    }
+
+    .list {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        top: -200px;
+        left: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 130px;
+            height: 20px;
+            margin: 0;
+            padding: 0;
+            padding-left: 35px;
+            padding-bottom: 50px;
+            &:nth-child(2) {
+                flex-wrap: nowrap;
+                padding-left: 50px;
+            }
+        }
+    }
+}
+
